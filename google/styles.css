@@ -1,6 +1,12 @@
-body {
+* {
+    margin: 0;
+}
+
+html, body {
   /* rules go here */
   font: 13px/27px Arial,sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 .apps {
@@ -28,6 +34,25 @@ body {
   line-height: 30px;
 }
 
+.picture {
+  background: url("Google_files/photo.jpg");
+  height: 30px;
+  width: 30px;
+  background-size: 30px 30px;
+  border-radius: 2px;
+}
+
+.logo {
+  background-image: url("Google_files/logo11w.png");
+  height: 95px;
+  width: 269px;
+  margin: auto;
+  margin-bottom: 15px;
+  background-size: 100%;
+  clear: both;
+  position: relative;
+}
+
 .share:hover {
   background: rgba(0,0,0,.08);
 }
@@ -43,4 +68,105 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.searchbar {
+  width: 550px;
+  height: 20px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  height: 27px;
+  border: 1px solid rgba(0,0,0,.15);
+  padding-left: 10px;
+}
+
+input:hover {
+  border-color: rgba(0,0,0,.3);
+}
+
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+.microphone {
+  background: url("Google_files/microphone.gif");
+  height: 19px;
+  width: 14px;
+  background-size: 14px 19px;
+  position: relative;
+  left:540px;
+  bottom: 26px;
+  opacity: .6;
+}
+
+.microphone:hover {
+  opacity: 1;
+}
+
+button {
+  border: 1px solid rgba(0,0,0,.15);
+  background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  font: bold 11px/22px Arial,sans-serif!important;
+  color: #444!important;
+  vertical-align: top;
+  border-radius: 2px;
+  margin-left: 13px;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(0,0,0,.20);
+  border: 1px solid rgba(0,0,0,.20);
+}
+
+.searchBody {
+  margin: auto;
+}
+
+.alignLeft {
+  float: left;
+}
+
+.alignRight {
+  float: right;
+}
+
+.margin15 {
+  margin-left: 15px;
+}
+
+.margin20 {
+  margin-left: 20px;
+}
+
+.nav {
+  padding: 15px 35px 0px 0px;
+  margin-bottom: 127px;
+  height: 60px;
+}
+
+.footer {
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  padding: 10px;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:25px;
+  width:100%;
+}
+
+.footer a {
+  color: #666;
+}
+
+.searchbuttons {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
